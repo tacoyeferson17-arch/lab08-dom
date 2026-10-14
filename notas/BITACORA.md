@@ -26,4 +26,24 @@ Navegador usado: (escribe aqui cual usaste)
 | Enviar con `preventDefault`, correo sin `@` | Muestra el mensaje "Correo no valido: falta @" en rojo. | No |
 | Enviar con `preventDefault`, correo con `@` | Muestra "Enviado: correo@ejemplo.com". | No |
 ## Ejercicio 5: Clases y objetos 
+| Objeto | nombre | precio | `descripcion()` | `conDescuento(0.25)` |
+| --- | --- | --- | --- | --- |
+| `laptop` | Laptop | 2500 | Laptop - S/ 2500.00 | 1875.00 |
+| `mouse` | Mouse | 45 | Mouse - S/ 45.00 | 33.75 |
+| `teclado` | Teclado | 120 | Teclado - S/ 120.00 | 90.00 |
+| `monitor` | Monitor | 680 | Monitor - S/ 680.00 | 510.00 |
+
+- **Ventaja de usar Clases**: Permite encapsular atributos y métodos en una sola plantilla estructurada, evitando código duplicado[cite: 4, 11]. Permite renderizar objetos dinámicamente agregándolos simplemente al arreglo[cite: 12].
 ## Ejercicio 6: DOM, eventos y objetos juntos
+| Prueba | Total que muestra la página | Correcto (Sí/No) |
+| --- | --- | --- |
+| Cuaderno 12.50 | 12.50 | Sí |
+| + Lapicero 3.20 | 15.70 | Sí |
+| + Mochila 89.90 | 105.60 | Sí |
+| Sin `Number()` | Se interrumpe (Error en consola) | No |
+
+| Pieza | Línea de tu código donde aparece | Para qué sirve |
+| --- | --- | --- |
+| **DOM** | `const listaCarrito = document.querySelector("#carrito");` | Selecciona y manipula los nodos del documento. |
+| **Evento** | `formProducto.addEventListener("submit", ...)` | Escucha la interacción cuando el usuario envía el formulario. |
+| **Objeto** | `const producto = new Producto(...)` | Crea e instancia un objeto de datos reutilizable. |
